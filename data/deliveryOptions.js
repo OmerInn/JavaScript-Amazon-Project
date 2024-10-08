@@ -23,7 +23,7 @@ export function getDeliveryOption(deliveryOptionId) {
 
   if (!deliveryOption) {
     console.error("Delivery option not found");
-    return null; // Eğer seçenek bulunamazsa null döndür
+    return null;
   }
 
   return deliveryOption;
