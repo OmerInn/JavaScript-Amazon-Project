@@ -5,6 +5,6 @@ Kullanıcılar, ürünlerinin teslimat seçeneklerini güncelleyebilir. Örneği
 
 Ayrıca, sepetteki ürünleri güncelleyip silebilirsiniz. Sepetteki ürünlerin toplam fiyatına %10'luk bir vergi eklenmektedir. Returns & Orders bölümünde, daha önce satın alınan ürünlerinizi görüntüleyebilirsiniz. Track Package sayfasına giderek, siparişlerinizin durumunu takip edebilir ve aşağıdaki seçenekleri görebilirsiniz:
 
-Hazırlık
-Sevkiyat
-Teslim edildi
+Hazırlık ,
+Sevkiyat ,
+Teslim edildi.
