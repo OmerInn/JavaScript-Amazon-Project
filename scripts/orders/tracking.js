@@ -7,7 +7,7 @@ let trackingHTML='';
 
 
 cart.cartItems.forEach((item) => {
-const product = products.find(p => p.id === item.productId); // Ürün bilgilerini buluyoruz
+const product = products.find(p => p.id === item.productId); 
 
       trackingHTML += `
       <div class="order-tracking">
