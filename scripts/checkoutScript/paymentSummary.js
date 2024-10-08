@@ -14,19 +14,19 @@ export function renderPaymentSummary() {
 
   let cartQuantity = 0;
   cart.cartItems.forEach(cartItem => {
-    const product = getProduct(cartItem.productId); // Sepet ürününü alıyoruz
+    const product = getProduct(cartItem.productId); 
     if (!product) {
       console.error(`Product with ID ${cartItem.productId} not found.`);
-      return; // Ürün bulunamazsa işlemi atla
+      return; 
     }
 
-    const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId); // Teslimat seçeneğini alıyoruz
+    const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId); 
     if (!deliveryOption) {
       console.error(`Delivery option with ID ${cartItem.deliveryOptionId} not found.`);
-      return; // Teslimat seçeneği bulunamazsa işlemi atla
+      return; 
     }
 
-    // Ürün fiyatı ve miktarını toplamaya devam et
+
 
     productPriceCents += product.priceCents * cartItem.quantity;
 
