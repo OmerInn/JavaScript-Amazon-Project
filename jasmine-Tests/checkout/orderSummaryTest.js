@@ -15,7 +15,7 @@ describe('Order Summary Test Suite', () => {
 
   it('should add a product to the cart', () => {
     cart.addToCart('new-product-id');
-    expect(cart.cartItems.length).toBe(3); // 2 varsayılan + 1 yeni ürün
+    expect(cart.cartItems.length).toBe(3);
     expect(cart.cartItems[2].productId).toBe('new-product-id');
     expect(cart.cartItems[2].quantity).toBe(1);
   });
@@ -23,12 +23,12 @@ describe('Order Summary Test Suite', () => {
   it('should remove a product from the cart', () => {
     cart.addToCart('product-id-to-remove');
     cart.removeFromCart('product-id-to-remove');
-    expect(cart.cartItems.length).toBe(2); // 2 varsayılan ürün
+    expect(cart.cartItems.length).toBe(2); 
   });
 
   it('should increase quantity when adding the same product again', () => {
     cart.addToCart('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
-    cart.addToCart('e43638ce-6aa0-4b85-b27f-e1d07eb678c6'); // Aynı ürünü ekle
-    expect(cart.cartItems[0].quantity).toBe(4); // 2 + 2
+    cart.addToCart('e43638ce-6aa0-4b85-b27f-e1d07eb678c6'); 
+    expect(cart.cartItems[0].quantity).toBe(4); 
   });
 });
